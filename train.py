@@ -18,7 +18,9 @@ loss_fn = nn.BCELoss()
 # ---------------------------
 # Load dataset (images folder)
 # ---------------------------
-image_paths = glob.glob("data/*.jpg")
+image_paths = glob.glob("data/v1.0-mini/samples/CAM_BACK/**/*", recursive=True)
+image_paths=[p for p in image_paths if p.endswidth((".jpg", ".png"))]
+random.shuffle(image_paths)
 
 if len(image_paths) == 0:
     print("❌ No images found in data/ folder")
