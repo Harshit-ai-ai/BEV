@@ -1,12 +1,11 @@
 # BEV
 
-#BEV Occupancy Prediction using UNet
+BEV Occupancy Prediction using UNet
 
 This project implements a **Bird’s Eye View (BEV) Occupancy Prediction model** using a UNet-based architecture. It processes front camera images and predicts occupancy maps for autonomous driving scenarios.
 
 ---
-
-##Overview
+Overview
 
 - Uses **nuScenes v1.0-mini dataset**
 - Converts camera images into BEV representation
@@ -14,8 +13,7 @@ This project implements a **Bird’s Eye View (BEV) Occupancy Prediction model**
 - Outputs binary occupancy maps
 
 ---
-
-##Model Architecture
+Model Architecture
 
 - Backbone: **UNet**
 - Input: Front camera images (`CAM_FRONT`)
@@ -23,6 +21,7 @@ This project implements a **Bird’s Eye View (BEV) Occupancy Prediction model**
 - Activation: **Sigmoid** (for binary classification)
 
 ---
+Project Structure
 
 bev-occupancy/
 │
@@ -51,5 +50,5 @@ bev-occupancy/
 
 
 ---
-## 📂 Project Structure
+
 
